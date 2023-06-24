@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header class="container-nav">
+    <nav class="navbar" >
+      <a href="#" class="brand"><img src="img/egg-logo.png" width="150" alt="imagen egg"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="servic.html">Servic</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav>
+    <button class="botons-menu-toggle">Menu</button>
+  </header>
+  
+  <main>
+      <h1>Contacto</h1>
+      <p>¡Contáctanos para cualquier consulta o solicitud de información!</p>
+     <!-- formulario -->
+     <div class="form-container">
+       <div class="js"> <img src="img/Unofficial_JavaScript_logo_2.svg.png" width="200" alt="Imagen de cabecera"></div>
+        
+        <h2> Formularios</h2>
+        <div class="contenedor"  >
+        <form id="myForm">
+          <div class="form-group">
+            <div class="input-container">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="input-container">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-container">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="email" name="correo" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-container">
+              <label for="contrasena">Contraseña</label>
+              <input type="password" id="password" name="contrasena" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-container">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-container">
+              <label for="pais">País</label>
+              <select id="pais" name="pais" style="display: none;">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="México">México</option>
+                <option value="Perú">Perú</option>
+              </select>
+               <button id="mostrarPaises">Mostrar Países</button>
+            </div>
+          </div>
+          
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+      </div>
+  </main>
+      <footer>
+        <h2>Este es un pie de pagina web </h2>
+        <div class="boton-st">
+          <button class="custom-btn btn" onclick="showAlert()">
+             <span>¡Haz clic en mi!</span>
+          </button>
+        </div>
+        
+        <p>contataciones <strong>Marcos Castillo</strong></p>
+        
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html> 
